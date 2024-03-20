@@ -1,7 +1,7 @@
 Tubo Search
 ===
 this project uses Tubo search to solve the deception problem
-- [MackMD link](https://hackmd.io/@B3AsTCbwSKGZWfnA5FLfFA/SyNmVYBAT)
+- [HackMD link](https://hackmd.io/@B3AsTCbwSKGZWfnA5FLfFA/SyNmVYBAT)
 
 Program Description
 ---
