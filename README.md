@@ -3,7 +3,14 @@ Tubo Search
 this project uses Tubo search to solve the deception problem
 - [MackMD link](https://hackmd.io/@B3AsTCbwSKGZWfnA5FLfFA/SyNmVYBAT)
 
-
+Program Description
+---
+- 1.The initial value of the Deception Problem will be randomly generated at the beginning.
+- 2.Enter recursion
+>- Evolve the next problem by the algorithm
+>- Verify that it is legal and in the history
+>- Determine whether it is the best solution
+- 3.Output results  
 
 executable file
 ---
