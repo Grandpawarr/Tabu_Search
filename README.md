@@ -5,12 +5,23 @@ this project uses Tubo search to solve the deception problem
 
 Program Description
 ---
+#### Overview
 - 1.The initial value of the Deception Problem will be randomly generated at the beginning.
 - 2.Enter recursion
 >- Evolve the next problem by the algorithm
 >- Verify that it is legal and in the history
 >- Determine whether it is the best solution
 - 3.Output results  
+#### Code
+- Tabumain
+>- main funcion
+
+- tabusearch
+>- tabu search algorithm implement
+
+- deception problem
+>- deception problem implement
+>- #deception problem is a maximization problem
 
 executable file
 ---
