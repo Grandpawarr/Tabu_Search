@@ -1,27 +1,21 @@
 #detect underlying system
+#create program name
 ifeq ($(OS),Windows_NT)
- 	PLATFORM="Windows"
+ 	PLATFORM:=Windows
+	PROGRAM=PRO.exe
+	RM=del
 else
-  	PLATFORM="Linux"
-endif
-
-export PLATFORM
-
-#set proper program neame	
-
-ifeq ($(PLATFORM),Windows)
-	PROGRAM=PRO.exx
-else
+  	PLATFORM:=Linux
 	PROGRAM=PRO
+	RM=rm
 endif
 
-export PROGRAM
 
 CC=gcc
 CFLAGS=-O1 -g -Wall -Werror
 OBJS=Tabumain.c tabusearch.c deceptionProblem.c 
 
-all:$(PROGRAM)
+
 
 #-lm:use to link math.
 $(PROGRAM):$(OBJS)
@@ -34,8 +28,8 @@ test:
 
 #delete program
 clean:
-	rm $(PROGRAM)
+	$(RM) $(PROGRAM)
 
 #show os platform
 os:
-	@echo $(PLATFORM)
+	@echo $(PLATFORM) $(PROGRAM)
