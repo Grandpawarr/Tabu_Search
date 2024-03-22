@@ -7,7 +7,7 @@ Program Description
 ---
 #### Overview
 - 1.The initial value of the Deception Problem will be randomly generated at the beginning.
-- 2.Enter recursion
+- 2.Enter iteration 
 >- Evolve the next problem by the algorithm
 >- Verify that it is legal and in the history
 >- Determine whether it is the best solution
