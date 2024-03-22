@@ -1,6 +1,6 @@
-Tubo Search
+Tabu Search
 ===
-this project uses Tubo search to solve the deception problem
+this project uses Tabu search to solve the deception problem
 - [HackMD link](https://hackmd.io/@B3AsTCbwSKGZWfnA5FLfFA/SyNmVYBAT)
 
 Program Description
