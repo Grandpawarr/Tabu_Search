@@ -27,9 +27,9 @@ Program Description
 
 executable file
 ---
-- linux:PRO
-- window:PRO.exe
-- Click PRO.exe to see the values ​​generated at the beginning and the final value of the algorithm.
+- Linux:PRO
+- Window:PRO.exe
+- click PRO.exe to see the values ​​generated at the beginning and the final value of the algorithm.
 
 Makefile
 ---
