@@ -33,7 +33,9 @@ executable file
 
 Makefile
 ---
-- test:run program
-- clean:delete program
->- #program can determine the os system to generate the executable file
+- test:
+>- run program
+- clean:
+>- delete program
+- #program can determine the OS system to generate the executable file
 
