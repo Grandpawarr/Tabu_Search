@@ -6,27 +6,51 @@
 
 int main()
 {
-    //random seed
+    // random seed
     srand(time(NULL));
 
-    //printf("hello tabusearch.c\n");
-    
-    //initial Tabu
-    tabu_t *head=T_initial();
-    //Iteration
-    for(int i=1;i<NumberOfIteration;i++){
-       // printf("====================\t%d\t==================\n",i);
+    /** Tabu Search Initial
+     * intial Tabu Search variable , function and
+     * randomly create the first Deception Problem
+     */
+    tabu_t *head = T_initial();
+
+    /** Iteration
+     * Evolve the next problem by the algorithm
+     * end after 1000 iteration
+     * @note
+     * comment at the bottom and delete it to generate the Tabu Search logs
+     */
+    for (int i = 1; i < NumberOfIteration; i++)
+    {
+        //printf("====================\t%d\t==================\n",i);
+
         head->Move(head);
-       // head->Display(head);
+
+        /*
+        if (head->Display(head))
+        { 
+            printf("!!ERROR:Display!!\n");
+        }
+        */
+        
     }
 
-    //final the Best value
+    /** Final
+     * 1.show the best result for the ultimate Tabu Search
+     * 2.pause the screen until enter is pressed
+     */
     printf("====================\tFINAL\t==================\n");
     printf("The Best vlaue is : \n");
-    head->Best.Display(&head->Best);
-    
-    printf("Press Enter to exit...\n");
-    while(getchar()!='\n'){};
-    return 0;
+    if (head->Best.Display(&head->Best))
+    {
+        printf("!!Display!!\n");
+    }
 
+    printf("Press Enter to exit...\n");
+    while (getchar() != '\n')
+    {
+    };
+
+    return 0;
 }
