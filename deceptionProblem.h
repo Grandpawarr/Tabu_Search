@@ -60,7 +60,7 @@ int D_display(deception_t* const D);
  * @param length : The length of nit
  * @return Long long  : The decimal
 */
-long long  D_coveryDinaryToDecimal(char *bit,int *length);
+long long D_coveryDinaryToDecimal(const char *const bit, const int *const length);
 
 /** Get Random
  * @brief Randomly generate integers from the minimum value to the maximum value

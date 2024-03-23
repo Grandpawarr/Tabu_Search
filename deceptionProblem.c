@@ -38,7 +38,7 @@ deception_t *D_new(const char *const str)
     /** Initial Deception Problem
      * 1.allocation memory
      * 2.initializing interface for access to functions
-    */
+     */
     deception_t *new = (deception_t *)malloc(sizeof(deception_t));
     if (!new)
     {
@@ -130,7 +130,7 @@ int D_display(deception_t *const D)
     return 0;
 }
 
-long long D_coveryDinaryToDecimal(char *bit, int *length)
+long long D_coveryDinaryToDecimal(const char *const bit, const int *const length)
 {
     /**
      * result : The becimal number(will be return)
