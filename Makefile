@@ -2,11 +2,11 @@
 #create program name
 ifeq ($(OS),Windows_NT)
  	PLATFORM:=Windows
-	PROGRAM=PRO.exe
+	PROGRAM=TabuSearch.exe
 	RM=del
 else
   	PLATFORM:=Linux
-	PROGRAM=PRO
+	PROGRAM=TabuSearch
 	RM=rm
 endif
 
@@ -23,7 +23,7 @@ $(PROGRAM):$(OBJS)
 	./$(PROGRAM)
 
 #run program
-test:
+run:
 	./$(PROGRAM)
 
 #delete program

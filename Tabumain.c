@@ -6,18 +6,18 @@
 
 int main()
 {
-    // random seed
+    // Random seed
     srand(time(NULL));
 
     /** Tabu Search Initial
-     * intial Tabu Search variable , function and
+     * Intial Tabu Search variable , function and
      * randomly create the first Deception Problem
      */
     tabu_t *head = T_initial();
 
     /** Iteration
      * Evolve the next problem by the algorithm
-     * end after 1000 iteration
+     * End after 1000 iteration
      * @note
      * comment at the bottom and delete it to generate the Tabu Search logs
      */

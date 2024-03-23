@@ -1,4 +1,3 @@
-// hello
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -72,6 +71,7 @@ deception_t *D_new(const char *const str)
         perror("message:");
         return 0;
     }
+
     D_function(new);
 
     return new;
@@ -81,17 +81,18 @@ void D_delete(deception_t *const D)
 {
     free(D->Dbinary);
     free(D->Dvalue);
+    free(D);
 }
 
 void D_function(deception_t *const D)
 {
     /**
-     * calculation the binary number length
-     * len : D.Dbinary number length
-     * bitLen : actual D.Dbinary number length
+     * Calculation the binary number length
+     * len : D->Dbinary number length
+     * bitLen : Actual D.Dbinary number length
      *
-     * Query from the beginning to the end of the string.
-     * If the beginning is 0, then bitLen-1 until 1 is encountered
+     * Query from the beginning to the end of the string
+     * If the beginning is 0, then bitLen -1 until 1 is encountered
      *
      */
     int len = strlen(D->Dbinary);
@@ -108,8 +109,8 @@ void D_function(deception_t *const D)
 
     /**
      * Calculation the Decetion Problem value here
-     * 1.convery binary to decimal
-     * 2.function calculation
+     * 1.Convery binary to decimal
+     * 2.Function calculation
      */
     long long sum = D_coveryDinaryToDecimal(D->Dbinary, &bitLen);
 

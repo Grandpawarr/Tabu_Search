@@ -13,7 +13,7 @@ Program Description
 >- Determine whether it is the best solution
 - 3.Output results
 - note:
->- The algorithm uses the given value to randomly exchange 2 different bits to generate the next new value.
+>- The algorithm uses the given value to randomly exchange 2 different position bits to generate the next new value.
 #### Code
 - Tabumain
 >- main funcion
@@ -40,13 +40,13 @@ Program Description
 
 executable file
 ---
-- Linux:PRO
-- Window:PRO.exe
-- click PRO.exe to see the values ​​generated at the beginning and the final value of the algorithm.
+- Linux:TabuSearch
+- Window:TabuSearch.exe
+- click TabuSearch.exe to see the value generated at the beginning and the final value of the algorithm.
 
 Makefile
 ---
-- test:
+- run:
 >- run program
 - clean:
 >- delete program

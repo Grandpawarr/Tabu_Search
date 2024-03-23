@@ -11,19 +11,19 @@ typedef int (*fptrDisplay)(tabu_t *);
 
 typedef struct TabuSearch
 {
-    int listsize;                            // tabu list current length
-    int showsize;                            // the value of How large an array needs to be displayed
-    deception_t histoylist[HistoryListSize]; // tabu list
-    deception_t Best;                        // the Best solution
-    fptrMove Move;
-    fptrAlgo Algo;
-    fptrAddHistoryList Addlist;
-    fptrDisplay Display;
+    int listsize;                            /**< Tabu list current length */
+    int showsize;                            /**< The value of how large an array needs to be displayed */
+    deception_t histoylist[HistoryListSize]; /**< Tabu history */
+    deception_t Best;                        /**< The Best solution */
+    fptrMove Move;                           /**< TabuSearch Move*/
+    fptrAlgo Algo;                           /**< TabuSearch Algorithm*/
+    fptrAddHistoryList Addlist;              /**< Add Deception Problem to Tabu history*/
+    fptrDisplay Display;                     /**< Display the Tabu history and the best solution */
 
 } tabu_t;
 
 /** Initioal
- * @brief initioal fisrt problem
+ * @brief Initioal fisrt problem
  *
  * Initial TabuSearch
  * Generate the first Deception Problem
@@ -44,16 +44,15 @@ tabu_t *T_initial();
 void TabuSearch_Move(tabu_t *head);
 
 /** TabuSearch Algorithm
- * @brief generating next solution
+ * @brief Generating next solution
  *
  * The algorithm is to randomly exchange two different positions
  * if two positional charactors are same,regenerate position
- * 
+ *
  * @param Dstr next Deception problem bit
  * @return Char*
  */
 char *TabuSearch_Algo(char *Dstr);
-
 
 /** Add Tabu history
  * @brief Add the Deception problem to the Tabu history list and
@@ -61,22 +60,22 @@ char *TabuSearch_Algo(char *Dstr);
  * @param head Target TabuSearch
  * @param D Added Deception Problem
  * @return Vail
-*/
+ */
 void TabuSearch_AddHistoryList(tabu_t *head, deception_t *D);
 
 /** Display
- * @brief show history list and best value
+ * @brief Show history list and best value
  * @param head Target TabuSearch
  * @return Int : If an error occurs,return 1,else 0
  */
 int TabuSearch_Display(tabu_t *head);
 
 /** Charactor swap
- * @brief swap two charactor
+ * @brief Swap two charactor
  * @param a The charactor1 pointer
  * @param b The charactor1 pointer
  * @return Void
-*/
+ */
 static inline void cSwap(char *a, char *b)
 {
     char tmp = *a;
