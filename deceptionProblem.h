@@ -43,7 +43,7 @@ void D_function(deception_t* const D);
 /** Display
  * @brief show the Deception Problem Dinary and Dvalue
  * @param D The target Deception Problem
- * @return Int : if an error occurs,return 1,else 0
+ * @return Int : If an error occurs,return 1,else 0
 */
 int D_display(deception_t* const D);
 
